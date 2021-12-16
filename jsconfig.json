@@ -1,0 +1,18 @@
+// jsconfig.json // 用于识别@sass这种别名，进行路径智能提示
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"],
+      "@img/*": ["src/assets/images/*"],
+      "@comp/*": ["src/components/*"],
+      "@u/*": ["src/utils/*"],
+      "@a/*": ["src/api/*"]
+    },
+    "target": "ES6",
+    "module": "commonjs",
+    "allowSyntheticDefaultImports": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"]
+}
